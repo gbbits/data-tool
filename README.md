@@ -5,8 +5,8 @@
 ## Installation
 ```bash
 # NPM
-npm install @reduxjs/toolkit
+npm install @gbbits/data-tool
 
 # Yarn
-yarn add @reduxjs/toolkit
+yarn add @gbbits/data-tool
 ```
