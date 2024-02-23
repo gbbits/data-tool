@@ -1,5 +1,5 @@
 {
-  "name": "data-tool",
+  "name": "@gbbits/data-tool",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
