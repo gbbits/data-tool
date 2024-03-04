@@ -1,6 +1,6 @@
 {
   "name": "@gbbits/data-tool",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "dataTool",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-      "url": "https://github.com/gbbits/data-tool"
+    "url": "https://github.com/gbbits/data-tool"
   },
   "keywords": [
     "util",
@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/gbbits/data-tool/issues"
   },
-  "homepage": "https://github.com/gbbits/data-tool#readme"
+  "homepage": "https://github.com/gbbits/data-tool#readme",
+  "dependencies": {
+    "arg": "^5.0.2"
+  }
 }
