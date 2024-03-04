@@ -1,78 +1,9 @@
-const validateEmail = (email) => {
-    // 使用正则表达式验证邮箱格式
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
+//index.js
+var tools = {};
 
-  const validatePassword = (password) => {
-    // 密码至少包含一个大写字母、一个小写字母、一个数字，且长度在8到20之间
-    const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/;
-    return passwordRegex.test(password);
-  };
-  
-  const validatePhoneNumber = (phoneNumber) => {
-    // 验证手机号码，可以是纯数字或带有国家代码的格式，如+1 (123) 456-7890
-    const phoneRegex = /^\+?\d{1,3}?[-.\s]?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/;
-    return phoneRegex.test(phoneNumber);
-  };
+tools.string = require('./src/string/index');
+tools.valid = require('./src/valid/index');
+tools.array = require('./src/array/index');
+tools.json = require('./src/json/index');
 
-  const validateNumberString = (str) => {
-    // 使用 isNaN() 函数验证字符串是否是一个数字
-    return !isNaN(str);
-  };
-  const validateStringContains = (str, char) => {
-    // 使用 includes() 方法验证字符串是否包含指定的字符
-    return str.includes(char);
-  };
-  const validateStringInArray = (str, arr) => {
-    // 使用 includes() 方法验证字符串是否在数组中
-    return arr.includes(str);
-    
-    // 或者使用 indexOf() 方法
-    // return arr.indexOf(str) !== -1;
-  };  
-  const validateSubstring = (str, start, end) => {
-    // 使用 substring() 方法截取字符串
-    return str.substring(start, end);
-    
-    // 或者使用 slice() 方法
-    // return str.slice(start, end);
-  };
-  const capitalizeFirstLetter = (str) => {
-    // 使用 charAt() 方法获取第一个字符并转换为大写，然后与剩余部分拼接
-    return str.charAt(0).toUpperCase() + str.slice(1);
-  };
-  const convertToUpperCase = (str) => {
-    return str.toUpperCase();
-  };
-  
-  const convertToLowerCase = (str) => {
-    return str.toLowerCase();
-  };
-  const trimString = (str) => {
-    return str.trim(); // 去除字符串两端的空格
-  };
-  
-  const reverseString = (str) => {
-    return str.split('').reverse().join(''); // 反转字符串
-  };
-  
-  const replaceSubstring = (str, oldSubstr, newSubstr) => {
-    return str.replace(oldSubstr, newSubstr); // 替换字符串中的特定子串
-  };
-  
-  module.exports = {
-    validateEmail,
-    validatePassword,
-    validatePhoneNumber,
-    validateNumberString,
-    validateStringContains,
-    validateStringInArray,
-    validateSubstring,
-    capitalizeFirstLetter,
-    convertToUpperCase,
-    convertToLowerCase,
-    trimString,
-    reverseString,
-    replaceSubstring
-  };
+module.exports = tools;

@@ -1,16 +1,27 @@
 {
   "name": "@gbbits/data-tool",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "dataTool",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-      "url": "git+https://github.com/gbbits/data-tool"
+      "url": "https://github.com/gbbits/data-tool"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT"
+  "keywords": [
+    "util",
+    "utils",
+    "js",
+    "javascript",
+    "tool",
+    "tools"
+  ],
+  "author": "gbbits",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gbbits/data-tool/issues"
+  },
+  "homepage": "https://github.com/gbbits/data-tool#readme"
 }

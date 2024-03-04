@@ -1,7 +1,18 @@
-# Gbbits Data toolkit
+# Gbbits Data tool
 
-**This is a data toolkit
-
+** This is a data tool
+ ```bash
+ array
+ ```
+ ```bash
+ json
+ ```
+  ```bash
+  string
+ ```
+  ```bash
+  valid
+ ```
 ## Installation
 ```bash
 # NPM
